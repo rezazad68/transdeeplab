@@ -7,7 +7,7 @@ The code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab v3+ for 
 ---
 
 ## Updates
-- July 18, 2022: First release for 
+- July 18, 2022: Initial release.
 
 ## Setting up and Training
 
@@ -53,14 +53,14 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 | SSPP Level 3 | [link](https://drive.google.com/file/d/111KqDd0SVKKJtLnQlTDaJi03WO9CsZew/view?usp=sharing) |
 | SSPP Level 4 | [link](https://drive.google.com/file/d/1015liUD9gz6sygtvMH6oGb0oHqODFsoW/view?usp=sharing) |
 
-|**Setting**| DSC$\uparrow$   | HD$\downarrow$ | Aorta | Gallbladder | Kidney(L) | Kidney(R)| Liver | Pancreas| Spleen | Stomach |
+|**Setting**| DSC   | HD | Aorta | Gallbladder | Kidney(L) | Kidney(R)| Liver | Pancreas| Spleen | Stomach |
 | ------------------------------------------------------------------------------ |:----------------:|:---------------:|:-------:|:-----------:|:---------:|:----------------:|:-------:|:----------------:|:-------:|:-------:|
-| **CNN as Encoder**                                                             | $75.89$          | $28.87$         | $85.03$ | $65.17$     | $80.18$   | $76.38$          | $90.49$ | $57.29$          | $85.68$ | $69.93$ |
-| **Basic Scale Fusion**                                                         | $79.16$          | $22.14$         | $85.44$ | $68.05$     | $82.77$   | $80.79$          | $93.80$ | $58.74$          | $87.78$ | $75.96$ |
-| **SSPP Level 1**                                                               | $79.01$          | $26.63$         | $85.61$ | $68.47$     | $82.43$   | $78.02$          | $94.19$ | $58.52$          | $88.34$ | $76.46$ |
-| **SSPP Level 2**                                                               | $80.16$          | $21.25$         | $86.04$ | $69.16$     | $84.08$   | $79.88$          | $93.53$ | $61.19$          | $89.00$ | $78.40$ |
-| **SSPP Level 3**                                                               | $79.87$          | $18.93$         | $86.34$ | $66.41$     | $84.13$   | $82.40$          | $93.73$ | $59.28$          | $89.66$ | $76.99$ |
-| **SSPP Level 4**                                                               | $79.85$          | $25.69$         | $85.64$ | $69.36$     | $82.93$   | $81.25$          | $93.09$ | $63.18$          | $87.80$ | $75.56$ |
+| **CNN as Encoder**                                                             | 75.89          | 28.87         | 85.03 | 65.17     | 80.18   | 76.38          | 90.49 | 57.29          | 85.68 | 69.93 |
+| **Basic Scale Fusion**                                                         | 79.16          | 22.14         | 85.44 | 68.05     | 82.77   | 80.79          | 93.80 | 58.74          | 87.78 | 75.96 |
+| **SSPP Level 1**                                                               | 79.01         | 26.63         | 85.61 | 68.47     | 82.43   | 78.02         | 94.19 | 58.52          | 88.34 | 76.46 |
+| **SSPP Level 2**                                                               | 80.16          | 21.25         | 86.04 | 69.16     | 84.08   | 79.88          | 93.53 | 61.19          | 89.00 | 78.40 |
+| **SSPP Level 3**                                                               | 79.87          | 18.93         | 86.34 | 66.41    | 84.13   | 82.40          | 93.73 | 59.28          | 89.66 | 76.99 |
+| **SSPP Level 4**                                                               | 79.85          | 25.69         | 85.64 | 69.36     | 82.93   | 81.25          | 93.09 | 63.18          | 87.80 | 75.56 |
 
 
 (should be checked)
