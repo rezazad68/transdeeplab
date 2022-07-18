@@ -1,6 +1,6 @@
 # TransDeepLab
 
-The code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab v3+ for Medical Image Segmentation_".
+The official code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab v3+ for Medical Image Segmentation_".
 
 ![Proposed Model](./images/proposed_model.png)
 
