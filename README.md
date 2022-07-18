@@ -47,7 +47,7 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 
 - Other arguments and flags can be given to the `test.py` file if some settings need to be modified but `--ckpt_path` and `--config_file` are the only required arguments.
 
-- Trained weights for our best-reported results in the paper are easily accessible from [this link](https://drive.google.com/drive/folders/17AYvKNYIHYvbhkOEE8VRO5vbADNYQEVG?usp=sharing), where you could download it as a sole folder via [gdown](https://github.com/wkentaro/gdown) or setting specific links listed under the below table. 
+- Trained weights for our best-reported results in the paper are easily accessible from [this link](https://drive.google.com/drive/folders/17AYvKNYIHYvbhkOEE8VRO5vbADNYQEVG?usp=sharing), where you could download it as a sole folder via [gdown](https://github.com/wkentaro/gdown) or setting specific links listed under the below table:
 
 | Model setting name | Pre-trained weights | `--config_file` name|
 | --- | --- | --- |
@@ -57,7 +57,7 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 | SSPP Level 4 | [link](https://drive.google.com/file/d/1015liUD9gz6sygtvMH6oGb0oHqODFsoW/view?usp=sharing) | `swin_224_7_4level` |
 - :exclamation: Remember to put these weights in a specific folder that you are going to address them with `test.py` via `--ckpt_path` flag.
 
-- Comparison results table on the _Synapse_ dataset
+- Comparison results table on the _Synapse_ dataset:
 
 | <h3 align="left">**Methods** </h3> | DSC <p>&#8593;</p> | HD <p> &#8595;</p>  | Aorta | Gallbladder | Kidney(L) | Kidney(R) | Liver | Pancreas | Spleen | Stomach |
 | --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -72,7 +72,7 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 | **DeepLabv3+ (CNN)** | 77.63 | 39.95 | 88.04 | 66.51 | 82.76 | 74.21 | 91.23 | 58.32 | 87.43 | 73.53 |
 | **TransDeepLab** | **80.16** | **21.25** | 86.04 | 69.16 | **84.08** | 79.88 | 93.53  |**61.19** | 89.00 |  **78.40**|
 
-- Impact of modifying modules inside the proposed method.
+- Impact of modifying modules inside the proposed method:
 
 |<h3 align="left">**Setting**</h3>| DSC <p>&#8593;</p> | HD <p> &#8595;</p> | Aorta | Gallbladder | Kidney(L) | Kidney(R)| Liver | Pancreas| Spleen | Stomach |
 | --- |---:|:---:|:-------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -84,7 +84,7 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 | **SSPP Level 4** | 79.85  | 25.69 | 85.64 | 69.36 | 82.93  | 81.25 | 93.09 | 63.18 | 87.80 | 75.56 |
 
 
-- A look at the number of parameters
+- A look at the number of parameters:
 
 | Model | # Encoder Parameters | # ASPP Parameters | # Decoder Parameters | # Total |
 | --- | ----------- | --- | --- | --- |
