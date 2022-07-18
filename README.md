@@ -15,7 +15,7 @@ The official code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab
 
 - In order to run the code and experiments, you need to first install the dependencies and then download and move the data to the right place. 
 
-- I have put the required instructions for doing the above steps in the `./setup.sh` file in the repo. `cd` to this repo directory and then run it to install dependencies and download and move data to the right dir.
+- We have put the required instructions for doing the above steps in the `./setup.sh` file in the repo. `cd` to this repo directory and then run it to install dependencies and download and move data to the right dir.
 
     -  For the _Synapse_ dataset, we used the data provided by [TransUnet](https://github.com/Beckschen/TransUNet)'s authors.
     - For _ISIC 2017-18_ datasets, we used the ISIC Challenge datasets [link](https://challenge.isic-archive.com/data/).
