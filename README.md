@@ -18,7 +18,7 @@ The official code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab
 - In order to run the code and experiments, you need to first install the dependencies and then download and move the data to the right place. 
     -  For the _Synapse_ dataset, we used the data provided by [TransUnet](https://github.com/Beckschen/TransUNet)'s authors.
     - For _ISIC 2017-18_ datasets, we used the ISIC Challenge datasets [link](https://challenge.isic-archive.com/data/).
-    - For the _PH$^2$_ dataset, we used this [link](https://www.dropbox.com/s/k88qukc20ljnbuo/PH2Dataset.rar).
+    - For the _PH $^2$ _ dataset, we used this [link](https://www.dropbox.com/s/k88qukc20ljnbuo/PH2Dataset.rar).
 
 - We have put the required instructions for doing the above steps in the `./setup.sh` file in the repo for your convenience. `cd` to this repo directory and then run it to install dependencies and download and move data to the right dir.
 
@@ -59,7 +59,22 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 
 - Comparison results table on the _Synapse_ dataset
 
-|**Setting**| DSC   | HD | Aorta | Gallbladder | Kidney(L) | Kidney(R)| Liver | Pancreas| Spleen | Stomach |
+| **Methods** | DSC $\uparrow$ | HD $\downarrow$  | Aorta | Gallbladder | Kidney(L) | Kidney(R) | Liver | Pancreas | Spleen | Stomach |
+| --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **V-Net** |  68.81 |  -  |  75.34 |  51.87 |  77.10 | **80.75**  |  87.84  |  40.05 | 80.56 |  56.98 |
+| **R50 U-Net** |  74.68  |  36.87  |  87.74 |  63.66 |  80.60 |  78.19 |  93.74 | 56.90 |  85.87 | 74.16 |
+| **U-Net** |  76.85 |  39.70 |  89.07 |  **69.72** |  77.77 |  68.60 |  93.43 |  53.98 |  86.67 | 75.58 |
+| **R50 Att-UNet** |  75.57 |  36.97 |  55.92 | 63.91 | 79.20 | 72.71 | 93.56 | 49.37 | 87.19 | 74.95 |
+| **Att-UNet** |  77.77 |  36.02 | **89.55**  | 68.88 | 77.98 | 71.11 | 93.57 | 58.04 | 87.30 | 75.75 |
+| **R50 ViT** |  71.29 |  32.87 |  73.73 |  55.13 |  75.80 |  72.20 |  91.51 |  45.99 |  81.99 | 73.95 |
+| **TransUnet** |  77.48 |  31.69 |  87.23 |  63.13 |  81.87 |  77.02 |  94.08 |  55.86 |  85.08 |  75.62 |
+| **SwinUnet** |  79.13 |  21.55 |  85.47 |  66.53 |  83.28 |  79.61 | **94.29** | 56.58 | **90.66** | 76.60 |
+| **DeepLabv3+ (CNN)** | 77.63 | 39.95 | 88.04 | 66.51 | 82.76 | 74.21 | 91.23 | 58.32 | 87.43 | 73.53 |
+| **TransDeepLab** | **80.16** | **21.25** | 86.04 | 69.16 | **84.08** | 79.88 | 93.53  |**61.19** | 89.00 |  **78.40**|
+
+- Impact of modifying modules inside the proposed method.
+
+|**Setting**| DSC $\uparrow$ | HD $\uparrow$ | Aorta | Gallbladder | Kidney(L) | Kidney(R)| Liver | Pancreas| Spleen | Stomach |
 | --- |---:|:---:|:-------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **CNN as Encoder**| 75.89 | 28.87 | 85.03 | 65.17 | 80.18 | 76.38| 90.49 | 57.29  | 85.68 | 69.93 |
 | **Basic Scale Fusion**| 79.16 | 22.14| 85.44 | 68.05 | 82.77| 80.79 | 93.80 | 58.74  | 87.78 | 75.96 |
