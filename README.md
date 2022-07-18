@@ -7,7 +7,7 @@ The official code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab
 ---
 
 ## Updates
-- July 18, 2022: Initial release.
+- July 20, 2022: Initial release.
 - July 4, 2022: Submitted to MICCAI PRIME2022 [Under Review].
 ---
 
@@ -47,7 +47,7 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 
 - Other arguments and flags can be given to the `test.py` file if some settings need to be modified but `--ckpt_path` and `--config_file` are the only required arguments.
 
-- Trained weights for our best-reported results in the paper are easily accessible from [this link](https://drive.google.com/drive/folders/17AYvKNYIHYvbhkOEE8VRO5vbADNYQEVG?usp=sharing), where you could download it as a sole folder via [gdown](https://github.com/wkentaro/gdown) or setting specific links listed under the below table:
+- Trained weights for our best-reported results in the paper for the _Synapse_ dataset are easily accessible from [this link](https://drive.google.com/drive/folders/17AYvKNYIHYvbhkOEE8VRO5vbADNYQEVG?usp=sharing), where you could download it as a sole folder via [gdown](https://github.com/wkentaro/gdown) or setting specific links listed under the below table:
 
 | Model setting name | Pre-trained weights | `--config_file` name|
 | --- | --- | --- |
