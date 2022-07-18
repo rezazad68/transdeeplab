@@ -13,7 +13,7 @@ The official code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab
 
 ## Setting up and Training
 
-- We use the code base from the [Swin-Unet](https://github.com/HuCaoFighting/Swin-Unet)[ GitHub repo](https://github.com/HuCaoFighting/Swin-Unet)](https://github.com/HuCaoFighting/Swin-Unet) as our starting point.
+- We use the code base from the [Swin-Unet GitHub repo](https://github.com/HuCaoFighting/Swin-Unet) as our starting point.
 
 - In order to run the code and experiments, you need to first install the dependencies and then download and move the data to the right place. 
     -  For the _Synapse_ dataset, we used the data provided by [TransUnet](https://github.com/Beckschen/TransUNet)'s authors.
