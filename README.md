@@ -8,7 +8,7 @@ The official code for "_TransDeepLab: Convolution-Free Transformer-based DeepLab
 
 ## Updates
 - July 19, 2022: Initial release.
-- July 4, 2022: Submitted to MICCAI PRIME2022 [Under Review].
+- July 4, 2022: Submitted to MICCAI PRIME2022 ~~[Under Review]~~ [Accepted].
 ---
 
 ## Setting up and Training
