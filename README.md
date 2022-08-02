@@ -111,5 +111,10 @@ python train.py --config_file 'swin_224_7_{# of SSPP}level' --dataset Synapse --
 ---
 ## Citation
 ```
-
+@article{azad2022transdeeplab,
+  title={TransDeepLab: Convolution-Free Transformer-based DeepLab v3+ for Medical Image Segmentation},
+  author={Azad, Reza and Heidari, Moein and Shariatnia, Moein and Aghdam, Ehsan Khodapanah and Karimijafarbigloo, Sanaz and Adeli, Ehsan and Merhof, Dorit},
+  journal={arXiv preprint arXiv:2208.00713},
+  year={2022}
+}
 ```
