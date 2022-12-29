@@ -16,7 +16,7 @@ The official code for ["_TransDeepLab: Convolution-Free Transformer-based DeepLa
 - We use the code base from the [Swin-Unet GitHub repo](https://github.com/HuCaoFighting/Swin-Unet) as our starting point.
 
 - In order to run the code and experiments, you need to first install the dependencies and then download and move the data to the right place. 
-    -  For the _Synapse_ dataset, we used the data provided by [TransUnet](https://github.com/Beckschen/TransUNet)'s authors.
+    - For the _Synapse_ dataset, we used the data provided by [TransUnet](https://github.com/Beckschen/TransUNet)'s authors.
     - For _ISIC 2017-18_ datasets, we used the ISIC Challenge datasets [link](https://challenge.isic-archive.com/data/).
     - For the _PH<sup>2</sup>_ dataset, we used this [link](https://www.dropbox.com/s/k88qukc20ljnbuo/PH2Dataset.rar).
 
